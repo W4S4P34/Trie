@@ -8,7 +8,7 @@ using namespace std;
 struct TrieNode
 {
 	map<char, TrieNode*> ChildrenNode;
-	int Height = 0;
+	int Height = 1;
 	bool isWord = false;
 };
 
@@ -24,4 +24,4 @@ void insertNode(TrieNode*&, string);
 void searchWords(TrieNode*, string);		// In-order Traversal
 
 /* DELETE TRIE */
-void deleteTrie(TrieNode*&);				// In-order Traversal
+void deleteTrie(TrieNode*&);				// Post-order Traversal

@@ -24,4 +24,4 @@ void insertNode(TrieNode*&, string);
 void searchWords(TrieNode*, string);		// In-order Traversal
 
 /* DELETE TRIE */
-void deleteTrie(TrieNode*&);				// In-order Traversal
+void deleteTrie(TrieNode*&);				// Post-order Traversal

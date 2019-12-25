@@ -3,6 +3,7 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <fstream>
 using namespace std;
 
 struct TrieNode
@@ -13,15 +14,17 @@ struct TrieNode
 };
 
 /* FILE HANDLE */
-bool inputFile(TrieNode*&);
-void outputFile(TrieNode*);
+void inputDictionary(TrieNode*&, string);
+string inputFile(string);
+void outputFile(TrieNode*, string, vector<string>);
 
 /* BUILD TRIE */
 TrieNode* createNewNode();
 void insertNode(TrieNode*&, string);
 
 /* SEARCH TRIE */
-void searchWords(TrieNode*, string);		// In-order Traversal
+void searchWords(TrieNode*, string&, string&, vector<string>&, int);		// Pre-order Traversal
+vector<string> search(TrieNode*, string);
 
 /* DELETE TRIE */
-void deleteTrie(TrieNode*&);				// Post-order Traversal
+void deleteTrie(TrieNode*&);    // Post-order Traversal

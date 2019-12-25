@@ -3,7 +3,7 @@
 int main()
 {
 	TrieNode* Root = new TrieNode;
-	inputDictionary(Root, "Dick.txt");
+	inputDictionary(Root, "Dic.txt");
 	string Input = inputFile("Input.txt");
 	vector<string> lmao = search(Root, Input);
 	outputFile(Root, "Output.txt", lmao);

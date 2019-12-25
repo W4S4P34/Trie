@@ -27,4 +27,4 @@ void searchWords(TrieNode*, string&, string&, vector<string>&, int);		// Pre-ord
 vector<string> search(TrieNode*, string);
 
 /* DELETE TRIE */
-void deleteTrie(TrieNode*&);												// Post-order Traversal
+void deleteTrie(TrieNode*&);    // Post-order Traversal
